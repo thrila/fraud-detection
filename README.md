@@ -1,30 +1,42 @@
-### Fraudulent Transaction Detector
-This is a model that tries to predict fraudulent eth transactions
-It was originally supposed to be for local bank transactions however i do not have access to transactions details lol
+# Fraudulent Transaction Detector
 
-*Dataset:* provided by kaggle
+This project builds a model to predict fraudulent Ethereum transactions.
 
-**SETUP NOTEBOOK**
+Originally intended for local bank transactions, but due to lack of access to sensitive financial data, a publicly available Ethereum dataset from Kaggle is used instead.
+
+---
+
+## 📦 Dataset  
+**Source:** Kaggle (Ethereum transaction dataset)
+
+---
+
+## ⚙️ Setup Instructions
+
+```bash
 # 1. Clone the project
 git clone <project_url>
 cd <project_name>
 
-# 2. Install dependencies from uv.lock
+# 2. Install dependencies using uv
 uv sync
 
-# 3. Activate the virtual environment (optional, for manual control)
-source .venv/bin/activate        # Unix/macOS
-# OR
-.venv\Scripts\activate           # Windows
+# 3. (Optional) Activate the virtual environment manually
+source .venv/bin/activate        # for Unix/macOS
+.venv\Scripts\activate           # for Windows
 
-# 4. Run Jupyter Lab
-uv run jupyter lab               # Preferred — runs inside the uv-managed env
-# OR if manually activated above:
+# 4. Launch Jupyter Lab
+uv run jupyter lab               # preferred: uses the uv-managed environment
+# OR if you activated manually:
 jupyter lab
+```
 
---- 
-- [X] make prepare data, normalise and use relavant features to train
-- [X] test various classification models
-- [X] fine tune best performing model
-- [ ] reimplement in a lowlevel language and expose via API
+---
+
+## ✅ Project Checklist
+
+- [x] Prepare data: normalize and extract relevant features
+- [x] Test multiple classification models
+- [x] Fine-tune the best performing model
+- [ ] Reimplement in a low-level language and expose via API
 
