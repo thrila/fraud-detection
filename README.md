@@ -2,6 +2,8 @@
 This is a model that tries to predict fraudulent eth transactions
 It was originally supposed to be for local bank transactions however i do not have access to transactions details lol
 
+*Dataset:* provided by kaggle
+
 **SETUP NOTEBOOK**
 # 1. Clone the project
 git clone <project_url>
